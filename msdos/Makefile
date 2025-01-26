@@ -7,6 +7,6 @@ CC      = gcc
 CFLAGS += -shared
 
 all:	$(SOURCES)
-	$(CC) $(CFLAGS) $(INCLUDES) $(SOURCES)
+	$(CC) $(CFLAGS) $(SOURCES)
 
 .PHONY: all
