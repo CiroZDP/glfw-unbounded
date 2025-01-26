@@ -1,5 +1,5 @@
 # Project settings
-SOURCES  = %.c
+SOURCES  = core.c
 INCLUDES = -I"../include/"
 
 # Compiler settings
