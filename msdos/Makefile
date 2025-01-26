@@ -9,4 +9,4 @@ CFLAGS += -fPIC -shared
 all:	$(SOURCES)
 	$(CC) $(CFLAGS) $(SOURCES) $(INCLUDES)
 
-.PHONY all
+.PHONY: all
