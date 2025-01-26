@@ -4,7 +4,7 @@ INCLUDES = -I"../include/"
 
 # Compiler settings
 CC      = gcc
-CFLAGS += -fPIC -shared
+CFLAGS += -shared
 
 all:	$(SOURCES)
 	$(CC) $(CFLAGS) $(SOURCES) $(INCLUDES)
