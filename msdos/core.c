@@ -1,5 +1,11 @@
-/// To simplify empty methods
-#define GLFW_TRUE 1
-# define _lambda(v) { return v; }
+# ifndef _lamba
+#   define _lambda(v) { return v; }
+# endif
 
-int glfwInit()		_lambda( GLFW_TRUE );
+struct GLFWwindow {};
+
+static GLFWwindow DEFAULT_WINDOW;
+
+
+int         glfwInit()          _lambda( GLFW_TRUE );
+GLFWwindow* glfwCreateWindow()  _lambda( DEFAULT_WINDOW );
